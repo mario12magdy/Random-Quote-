@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="../images/bookmark.png" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="home vh-100">
+    <div class="title text-center w-100 pt-4 ">
+        <h1>Bookmarker</h1>
+    </div>
+    
+    <br>
+    <div class="container w-100 text-center">
+        
+    <hr>
+    <div class="title2">
+        <h2><span><i class="fa-solid fa-bookmark"></i></span> Bookmark your favorite sites <span><i class="fa-solid fa-bookmark"></i></span></h2>
+    </div>
+    </div>
+    <div class="container py-5">
+
+        <form>
+            <div class="mb-2">
+                <label for="siteName" class="fw-bolder pb-2">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    <span>
+                        Site Name
+                    </span>
+                    </label>
+                <input type="text" id="siteName"  class="form-control" name="">
+            </div>
+
+            <div class="mb-2">
+                <label for="siteURL" class="fw-bolder pb-2">
+                    <i class="fa-solid fa-link pe-2"></i>
+
+                    <span>Site URL</span>
+                
+                </label>
+                <input type="url" id="siteURL" class="form-control" name="">
+            </div>
+          
+            <div class="container  text-center w-100 pt-4">
+                
+            <button    onclick="addProduct()" type="button" class="btn  bg-danger text-light">Submit</button>
+            </div>
+            
+        </form>
+        <br>
+        <hr>
+        <br>
+     
+
+        <table class="table table-light table-striped  table-bordered  text-center table-hover">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>               
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="myData">
+                
+             
+            </tbody>
+        </table>
+
+    </div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
